@@ -5,6 +5,8 @@ import ErrorScreen from "../error/error2/Error"
 import SignInScreen from "../pages/auth/SigninScreen"
 import PrivateRoute from "./privateRoute"
 import Layout from "../components/common/Layout"
+import TestScreen from "../pages/screen/test/TestScreen"
+import TestScreen2 from "../pages/screen/test/TestScreen2"
 
 export const mainRoute = createBrowserRouter([
     {
@@ -24,6 +26,16 @@ export const mainRoute = createBrowserRouter([
             {
                 index: true,
                 element: <HomeScreen />
+            },
+            {
+                index: true,
+                path: "test",
+                element: <TestScreen />
+            },
+            {
+                index: true,
+                path: "test2",
+                element: <TestScreen2 />
             }
         ]
 

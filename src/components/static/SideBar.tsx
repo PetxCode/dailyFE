@@ -2,6 +2,7 @@ import { useState } from "react"
 
 const SideBar = () => {
     const [state, setState] = useState<boolean>(true)
+
     // "w-[200px] h-full fixed border-r-[1px]  mt-[70px]"
     return (
         <div
